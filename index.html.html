@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>ENCRIPTADOR</title>
+</head>
+
+<body>
+
+    <header> 
+        <div>
+            <img src="imagenes/Logo.png" alt="Logo de Alura" class="logo">
+        </div>   
+    </header>
+
+    <main>
+            <section class="left">
+                <textarea id= "ingreseTexto" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div class="parte-inferior-left">
+                <p class="informacion"><img src="imagenes/bi_exclamation-circle-fill.png" class="imagen1">
+                    Solo letras minúsculas y sin acentos</p>
+                    <div class="botones">
+                        <button id="btnEncriptar" class="btn-encriptar">Encriptar</button>
+                        <button id="btnDesencriptar"class="btn-desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+
+            <section id="right" class="right">
+                <img id="imagen2" src="imagenes/Muñeco.png" class="imagen2">
+                <textarea id="mensajeFinal" class="mensaje-final" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="mensajeInfo" class="mensaje-info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <div>
+                    <button id="btnCopiar" class="btn-copiar oculto">Copiar</button>
+                </div>
+            </section> 
+     </main>     
+     <footer></footer>
+     <script src="./script.js"></script>
+</body>
+</html>
